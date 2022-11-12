@@ -1,0 +1,78 @@
+1 
+x = int(input()) 
+if ( x>10 and x<22 ) or ( x>33 and x<40 ): 
+    print("Точка в множестве") 
+else: 
+    print("Точка вне множества") 
+ 
+2 
+a=int(input()) 
+b=int(input()) 
+if ((a>-5 and a<=0) and (b>-5 and b<=0)) or ((a> 2 and a<=7)and (b>2 and b<=7)): 
+    print('Да') 
+else: 
+    print("Нет") 
+ 
+ 
+3 
+s = float(input()) 
+t = float(input()) 
+v = s//t 
+if v<30: 
+    print("Медленно") 
+elif (v>30 and v<60): 
+    print("Средне") 
+elif v>60: 
+    print("Быстро") 
+ 
+ 
+4 
+num = int(input()) 
+n = num//100 
+u = num//10 %10 
+m = num%10 
+if n + u + m == 2 * max(n, u, m): 
+    print("Число интересное") 
+else: 
+    print("Число неинтересное") 
+ 
+5 
+nik = str(input()) 
+if (len(nik)>3 and len(nik)<15): 
+    print("Ник-нейм принят!") 
+elif len(nik)<3: 
+    print("Ник-нейм должен состоять минимум из 3 символов!") 
+elif len(nik)>15: 
+    print("Никнейм может состоять максимум из 15 символов!") 
+ 
+6 
+x = float(input()) 
+y = float(input()) 
+if x>0 and y>0: 
+    print("Точка принадлежит первой четверти") 
+    print("Введите две строчки") 
+    c = str(input()) 
+    g = str(input()) 
+    print(min(c,g)) 
+elif x<0 and y>0: 
+    print("Точка принадлежит второй четверти") 
+    f=(2*abs(x)-y)/y**2 
+    print(f) 
+elif x<0 and y<0: 
+    print("Точка принадлежит третьей четверти") 
+    n = str(input("Введите строку:")) 
+    u = (x*len(n), y*len(n)) 
+    print(u) 
+elif x>0 and y<0: 
+    print("Точка принадлежит четвертой четверти") 
+    if abs(y)>abs(x): 
+        print("Координата y – наибольшая по модулю") 
+    elif abs(y)<abs(x): 
+        print("Координата x – наибольшая по модулю") 
+    elif abs(x)==abs(y): 
+        print("Координаты равны по модулю") 
+ 
+7 
+a = input() 
+if "кот" in a: 
+    print("Мы погладили кота!")
