@@ -1,0 +1,84 @@
+1
+n = int(input())
+k = int(input())
+print("Количество шаурмы у каждого студента", k//n)
+print("Количество оставшиеся шаурмы в холодильнике", k%n)
+2
+abc = int(input())
+d = abc%10
+f = (abc%100)//10
+g = abc//100
+print(g, f, d, sep="")
+print(g, d, f, sep="")
+print(f, d, g, sep="")
+print(f, g, d, sep="")
+print(d, f, g, sep="")
+print(d, g, f, sep="")
+3
+a = int(input("Введите время готовки:"))
+b = int(input("Введите время уборки:"))
+c = int(input("Введите время стрики:"))
+d = 600
+e = d+a+b+c
+i = e%60
+t = e//60
+if i <= 10:
+    i = "0"+str(i)
+while t > 24:
+    t= t-24
+if t <= 10:
+    t = "0" + str(t)
+print(t, ":", i)
+4
+password = input()
+password2 = input()
+if password == password2:
+    print("Пароль принят")
+elif password != password2:
+    print("Пароль не принят")
+5
+n = int(input())
+k = int(input())
+if n >= k:
+    print(n, "-наибольшее число", k, "-наименьшее число")
+elif k <= n:
+    print(k, "-наибольшее число", n, "-наименьшее число")
+6
+n = int(input())
+if n >= 18:
+    print("Доступ разрешен")
+elif n <= 18:
+    print("Доступ запрещен")
+7
+num = int(input())
+a = num//100
+b = num//100%10
+c = num//10%10
+if c <= a >= b:
+    print(a, "Наибольшее число")
+elif a <= c >= b:
+    print(c, "Наибольшее число")
+elif c <= b >= a:
+    print(b, "Наибольшее число")
+8
+print("Введите число")
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+count = 0
+g = 0
+if a % 2 >= 0:
+    count += 1
+    g += a
+elif b % 2 >= 0:
+    count += 1
+    g += b
+elif c % 2 >= 0:
+    count += 1
+    g += c
+elif d % 2 >= 0:
+    count += 1
+    g += d
+print(count, "Количестов нечетных чисел")
+print(g, "Сумма нечетных чисел")
