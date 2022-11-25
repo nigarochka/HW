@@ -1,0 +1,50 @@
+#1
+"""N = int(input())
+word = ""
+for i in range(N):
+    i = input()
+    word += i[0]
+print(word.upper())"""
+
+
+#2
+"""s = input()
+print("Общее количество символов в строке:", len(s))
+print("Первый символ строки:", s[0])
+print("Последний символ строки:", s[-1:])
+print("Строку в обратном порядке:", s[::-1])
+print("Все символы с четными индексами:", s[::2])
+print("Все символы с нечетными индексами:", s[1::2])"""
+
+
+#3
+"""s = input()
+n = 1
+if s.isdigit():
+    for i in s:
+        print(int(i) * 10)
+elif s.isalpha():
+    for i in s:
+        if i == 'q' or i == 'Q':
+            n += 1
+            print(n)
+else:
+    r = 0
+    for i in s:
+        if i == '!' or i == '?' or i == '#' or i == '/' or i == '*' or i == '&':
+            print(r)
+        r += 1"""
+
+
+
+#4
+"""while True:
+    s = input("Задайте строку: >>>")
+    if s.upper() == "STOP":
+        break
+    if s.isalpha():
+        print("Буквенная строка")
+    elif s.isdigit():
+        print("Цифровая строка")
+    elif s.isalnum():
+        print("Смешанная строка")"""
