@@ -18,22 +18,18 @@ print("Все символы с нечетными индексами:", s[1::2]
 
 
 #3
-"""s = input()
-n = 1
-if s.isdigit():
-    for i in s:
+"""n = input()
+if n.isdigit():
+    for i in n:
         print(int(i) * 10)
-elif s.isalpha():
-    for i in s:
-        if i == 'q' or i == 'Q':
-            n += 1
-            print(n)
+elif "q" in n:
+    print(n.count('q'))
 else:
     r = 0
-    for i in s:
+    for i in n:
         if i == '!' or i == '?' or i == '#' or i == '/' or i == '*' or i == '&':
             print(r)
-        r += 1"""
+            r += 1"""
 
 
 
