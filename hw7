@@ -1,0 +1,29 @@
+print("Задание №1")
+from random import randint
+N = int(input('Количество чисел, которые нужно сформировать:'))
+with open('life.txt', 'w') as myfile:
+     for _ in range(N):
+         myfile.write(str(randint(1000, 9999))+" ")
+
+print('Задание №2')
+import math
+a = float(input('Введите начало множества: '))
+b = float(input('Введите конец множества: '))
+h = float(input('Введите шаг: '))
+with open('life.txt', 'w') as file:
+    x = a
+    while a <= x <= b:
+        y = (x * math.log(1 + (math.sin(x) / x)) / (x + math.sin(x)))
+        print('%5.2f | %2.2f' % (a, y,), file=file)
+        x += h
+
+print('Задание №3')
+import random
+with open('life.txt', 'r', encoding = 'utf-8' ) as file:
+    allText = file.read()
+    words = list(map(str, allText.split()))
+    print('I recieve', random.choice(words))
+with open('life.txt', 'r', encoding='utf-8') as file:
+    allText = file.read()
+    words = list(map(str, allText.split()))
+    print('You recieve', random.choice(words))
